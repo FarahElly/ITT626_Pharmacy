@@ -38,7 +38,7 @@ label{
 	cursor: pointer;
 	transition: .5s ease-in-out;
 }
-.label rd1{
+.signup label rd1{
 	justify-content: left;
 }
 input{
@@ -95,7 +95,7 @@ button:hover{
 	transform: scale(.6);
 }
 
-.checkbox_option{
+.signup .checkbox_option{
     label{
         margin-right: 1em;
         position: relative;
@@ -146,7 +146,7 @@ button:hover{
     }
   }
 }
-.radio_option {
+.signup .radio_option {
   label {
       margin-right: 1em;
     &:before {
@@ -174,7 +174,7 @@ button:hover{
     }
   }
 }
-.select_option {
+.signup .select_option {
   position: relative;
   width: 100%;
   select {
@@ -202,7 +202,7 @@ button:hover{
     }
   }
 }
-.select_arrow {
+.signup .select_arrow {
   position: absolute;
   top: calc(50% - 4px);
   right: 15px;
@@ -214,7 +214,7 @@ button:hover{
   border-color: #7b7b7b transparent transparent transparent;
 }
 
-.select_option select {
+.signup .select_option select {
   &:hover + .select_arrow, &:focus + .select_arrow {
     border-top-color: $black;
   }
