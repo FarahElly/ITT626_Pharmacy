@@ -95,7 +95,7 @@ button:hover{
 	transform: scale(.6);
 }
 
-.signup .checkbox_option{
+.input_field checkbox_option{
     label{
         margin-right: 1em;
         position: relative;
@@ -146,7 +146,7 @@ button:hover{
     }
   }
 }
-.signup .radio_option {
+.input_field radio_option {
   label {
       margin-right: 1em;
     &:before {
@@ -174,7 +174,7 @@ button:hover{
     }
   }
 }
-.signup .select_option {
+.input_field select_option {
   position: relative;
   width: 100%;
   select {
@@ -202,7 +202,7 @@ button:hover{
     }
   }
 }
-.signup .select_arrow {
+.select_arrow {
   position: absolute;
   top: calc(50% - 4px);
   right: 15px;
@@ -213,8 +213,7 @@ button:hover{
   border-style: solid;
   border-color: #7b7b7b transparent transparent transparent;
 }
-
-.signup .select_option select {
+.select_option select {
   &:hover + .select_arrow, &:focus + .select_arrow {
     border-top-color: $black;
   }
