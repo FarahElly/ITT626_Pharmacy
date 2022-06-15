@@ -38,6 +38,9 @@ label{
 	cursor: pointer;
 	transition: .5s ease-in-out;
 }
+.label rd1{
+	justify-content: left;
+}
 input{
 	width: 60%;
 	height: 20px;
