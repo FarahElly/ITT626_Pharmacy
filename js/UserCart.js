@@ -1,44 +1,44 @@
 let carts=document.querySelectorAll('.addCart');
 
-let products = [
+let products2 = [
 	{
 	name: "fresh orange",
-	tag:"product-1",
+	tag:"product1",
 	price: 10.99,
 	inCart:0
 	},
 	
 	{
 	name: "Yellow Flower Bedsheet (Queen Size)",
-	tag:"bedsheet3",
+	tag:"product2",
 	price: 65,
 	inCart:0
     },
 	
 	{
 	name: "Plain Square Pillow",
-	tag:"pillow1",
+	tag:"product1",
 	price: 40,
 	inCart:0
     },
 	
 	{
 	name: "Pattern Square Pillow",
-	tag:"pillow2",
+	tag:"product1",
 	price: 20,
 	inCart:0
     },
 	
 	{
 	name: "Plain Blanket",
-	tag:"blanket1",
+	tag:"product1",
 	price: 30,
 	inCart:0
     },
 	
 	{
 	name: "Pattern Blanket",
-	tag:"blanket2",
+	tag:"product1",
 	price: 30,
 	inCart:0
     }
@@ -47,8 +47,8 @@ let products = [
 
 for(let i=0; i < carts.length; i++){
 	carts[i].addEventListener('click', () => {
-		cartNumbers(products[i]);
-		totalCost(products[i]);
+		cartNumbers(products2[i]);
+		totalCost(products2[i]);
 	})
 }
 
@@ -62,7 +62,7 @@ function onloadCartNumbers(){
 
 
 
-function cartNumbers(products){
+function cartNumbers(products2){
 	let productNumbers = localStorage.getItem('cartNumbers');
 	
 	productNumbers = parseInt(productNumbers);
@@ -79,7 +79,7 @@ function cartNumbers(products){
 	setItems(products);
 }
 
-function setItems(product){
+function setItems(product2){
 	let cartItems=localStorage.getItem('productsInCart');
 	cartItems = JSON.parse(cartItems);
 	
@@ -125,7 +125,7 @@ function displayCart(){
 	let cartItems = localStorage.getItem("productsInCart");
 	cartItems = JSON.parse(cartItems);
 	
-	let productContainer = document.querySelector(".products");
+	let productContainer = document.querySelector(".products2");
 	let cartCost = localStorage.getItem('totalCost');
 	
 	
