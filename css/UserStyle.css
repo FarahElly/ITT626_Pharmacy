@@ -182,7 +182,7 @@ section{
     background: #fff;
 }
 
-/*.header .shopping-cart.active{
+.header .shopping-cart.active{
     right:2rem;
     transition: .4s linear;
 }
@@ -238,7 +238,7 @@ section{
     display: block;
     text-align: center;
     margin:1rem;
-}*/
+}
 
 .header .login-form{
     position: absolute;
