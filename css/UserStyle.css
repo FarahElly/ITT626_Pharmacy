@@ -523,6 +523,7 @@ section{
   }
 
   #file-chosen{
+    font-size: medium;
     margin-left: 0.3rem;
     font-family: sans-serif;
   }
@@ -571,6 +572,7 @@ section{
     margin-bottom: 15px;
   }
   .form-group label {
+    position: relative;
     font-size: medium;
     color: black;
     margin-bottom: 10px;
