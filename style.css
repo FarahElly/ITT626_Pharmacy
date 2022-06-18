@@ -10,9 +10,9 @@ body{
 }
 .main{
 	width: 550px;
-	height: 500px;
+	height: 800px;
 	background: red;
-	
+	overflow: hidden;
 	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
@@ -33,14 +33,13 @@ label{
 	font-size: 2.3em;
 	justify-content: center;
 	display: flex;
-	margin: 60px;
+	margin: 6px;
 	font-weight: bold;
 	cursor: pointer;
 	transition: .5s ease-in-out;
+  
 }
-.signup label rd1{
-	justify-content: left;
-}
+
 input{
 	width: 60%;
 	height: 20px;
@@ -53,17 +52,60 @@ input{
 	outline: none;
 	border-radius: 5px;
 }
+
+.radio_option label {
+  margin-left: 5.7em;
+  margin-right: -2.9em;
+  font-size: 1.5em;
+  display: inline;
+  justify-content: center;
+
+}
+.radio_option label:before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 100%;
+  vertical-align: -3px;
+  border: 2px solid #cccccc;
+  padding: 0.15em;
+  background-color: transparent;
+  background-clip: content-box;
+  transition: all 0.2s ease;
+ }
+
+ .radio_option input:hover + label:before {
+  border-color: #000000;
+}
+.radio_option input:checked + label:before {
+  background-color: #cccccc;
+  border-color: #cccccc;
+}
+
+ .main input[type=radio] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 button{
 	width: 60%;
 	height: 40px;
-	margin: 10px auto;
-	justify-content: left;
+	margin: 30px auto;
+	justify-content: center;
 	display: block;
 	color: #fff;
 	background: #573b8a;
 	font-size: 1em;
 	font-weight: bold;
-	margin-top: 20px;
+	margin-top: 70px;
 	outline: none;
 	border: none;
 	border-radius: 5px;
@@ -74,10 +116,10 @@ button:hover{
 	background: #6d44b8;
 }
 .login{
-	height: 460px;
+	height: 800px;
 	background: #eee;
-	border-radius: 60% / 10%;
-	transform: translateY(-180px);
+	border-radius: 40% / 10%;
+	transform: translateY(-60px);
 	transition: .8s ease-in-out;
 }
 .login label{
@@ -94,92 +136,81 @@ button:hover{
 #chk:checked ~ .signup label{
 	transform: scale(.6);
 }
+.checkbox_option label{
+margin-right: 1em;
+position: relative;
+font-size: 1.25em;
+top:50px;
+justify-content: center;
+display:flex;
+}
 
-.input_field checkbox_option{
-    label{
-        margin-right: 1em;
-        position: relative;
-        &:before {
-          content: "";
-          display: inline-block;
-          width: 0.5em;
-          height: 0.5em;
-          margin-right: 0.5em;
-          vertical-align: -2px;
-          border: 2px solid $grey;
-          padding: 0.12em;
-          background-color: transparent;
-          background-clip: content-box;
-          transition: all 0.2s ease;
-        }
-        &:after {
-          border-right: 2px solid $black;
-          border-top: 2px solid $black;
-          content: "";
-          height: 20px;
-          left: 2px;
-          position: absolute;
-          top: 7px;
-          transform: scaleX(-1) rotate(135deg);
-          transform-origin: left top;
-          width: 7px;
-          display: none;
-        }
-    }
-    input {
-    &:hover + label:before {
-      border-color: $black;
-    }
-    &:checked + label {
-      &:before {
-        border-color: $black;
-      }
-      &:after {
-        -moz-animation: check 0.8s ease 0s running;
-        -webkit-animation: check 0.8s ease 0s running;
-        animation: check 0.8s ease 0s running;
-        display: block;
-        width: 7px;
-        height: 20px;
-        border-color: $black;
-      }
-    }
-  }
+.checkbox_option label:before {
+content: "";
+display: inline-block;
+width: 0.5em;
+height: 0.5em;
+margin-right: 1.5em;
+margin-left: 0.5em;
+vertical-align: -2px;
+border: 2px solid #dcdce7;
+padding: 0.12em;
+background-color: transparent;
+background-clip: content-box;
+transition: all 0.2s ease;
 }
-.input_field radio_option {
-  label {
-      margin-right: 1em;
-    &:before {
-      content: "";
-      display: inline-block;
-      width: 0.5em;
-      height: 0.5em;
-      margin-right: 0.5em;
-      border-radius: 100%;
-      vertical-align: -3px;
-      border: 2px solid $grey;
-      padding: 0.15em;
-      background-color: transparent;
-      background-clip: content-box;
-      transition: all 0.2s ease;
-    }
-  }
-  input {
-    &:hover + label:before {
-      border-color: $black;
-    }
-    &:checked + label:before {
-      background-color: $black;
-      border-color: $black;
-    }
-  }
+.checkbox_option label:after {
+border-right: 2px solid rgb(245, 242, 242);
+border-top: 2px solid rgb(245, 242, 242);
+content: "";
+height: 20px;
+left: 100px;
+position: absolute;
+top: 7px;
+transform: scaleX(-1) rotate(135deg);
+transform-origin: left top;
+width: 7px;
+display: none;
 }
-.input_field select_option {
+
+input:hover + label:before {
+border-color: rgb(245, 242, 242);;
+}
+input:checked + label:before {
+border-color: rgb(245, 242, 242);;
+}
+input:checked +label:after {
+-moz-animation: check 0.8s ease 0s running;
+-webkit-animation: check 0.8s ease 0s running;
+animation: check 0.8s ease 0s running;
+display: block;
+width: 7px;
+height: 20px;
+border-color: rgb(245, 242, 242);;
+}
+.main input[type=checkbox] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: 100px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+.select_option {
   position: relative;
-  width: 100%;
+  width: 80%;
+  display: inline;
+  justify-content: center;
+  padding-left:60px;
+  top: 30px ;
+} 
   select {
     display: inline-block;
-    width: 100%;
+    width: 80%;
     height: 35px;
     padding: 0px 15px;
     cursor: pointer;
@@ -197,11 +228,11 @@ button:hover{
     &:hover, &:focus {
       color: $black;
       background: #fafafa;
-      border-color: $black;
+      border-color: #573b8a;
       outline: none;
     }
   }
-}
+
 .select_arrow {
   position: absolute;
   top: calc(50% - 4px);
