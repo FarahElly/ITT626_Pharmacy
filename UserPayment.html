@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PairPearl Online Pharmacy</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/UserStyle.css">
+    <!--<link rel="stylesheet" href="css/UserCart.css"> -->
+   
+<style>
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+    .col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+</style>
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="UserDashboard.html" class="logo"><i class="fa-solid fa-pills"></i> PairPearl Pharmacy </a>
+
+    <nav class="navbar">
+        <a href="UserDashboard.html">Home</a>
+        <a href="#features">Features</a>
+        <a href="UserProduct.html">Products</a>
+        <a href="UserOrderHistory.html">Order History</a>
+        <a href="UserProfile.html">Profile</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <a href="UserCart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div><span style="font-size: medium ;">0</span></i></a>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search product name / category">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Your <span>Online</span> Pharmacy</h3>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero nostrum veniam facere tempore nisi.</p>
+        --><a href="#" class="btn">Buy Now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- Payment section starts  -->
+
+<section>
+    <h3 class="heading"> Payment Bill</h3>
+    <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+          
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="john@example.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="New York">
+    
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="NY">
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="10001">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <a href="UserReceipt.html" class="btn">Continue to Checkout</a>
+          </form>
+        </div>
+      </div>
+</section>
+
+<!-- Payment section ends -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> PairPearl Pharmacy <i class="fa-solid fa-pills"></i></h3>
+            <!--<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p> -->
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> pairpearl@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Selangor, Malaysia </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+            <a href="product.html" class="links"> <i class="fas fa-arrow-right"></i> Products </a>
+            <a href="orderHistory.html" class="links"> <i class="fas fa-arrow-right"></i> Order History </a>
+            <a href="profile.html" class="links"> <i class="fas fa-arrow-right"></i> Profile </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> PairPearl </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<!-- custom js file link  -->
+<script src="js/UserJS.js"></script>
+<script src="js/UserCart.js"></script>
+<script>
+    function placeOrder(){
+
+              var fullname = document.getElementById("fullname").value;
+            var phonenum = document.getElementById("phonenum").value;
+        var email = document.getElementById("email").value;
+        var address = document.getElementById("adr").value;
+        var city = document.getElementById("city").value;
+        var postcode = document.getElementById("code").value;
+       
+        var cname = document.getElementById("cname").value;
+        var ccnum = document.getElementById("ccnum").value;
+        var expmonth = document.getElementById("expmonth").value;
+        var expyear = document.getElementById("expyear").value;
+        var cvv = document.getElementById("cvv").value;
+         
+          if(document.getElementById("KualaLumpur").selected)
+              var state= document.getElementById("KualaLumpur").value;
+
+         else if(document.getElementById("Selangor").selected)
+              var state= document.getElementById("Selangor").value;
+
+         else if(document.getElementById("NegeriSembilan").selected)
+              var state= document.getElementById("NegeriSembilan").value;
+
+        else if(document.getElementById("Perak").selected)
+              var state= document.getElementById("Perak").value;
+
+         if(document.getElementById("StandardDelivery").selected)
+              var delivery= document.getElementById("StandardDelivery").value;
+         else if(document.getElementById("Cod").selected)
+              var delivery= document.getElementById("Cod").value;
+
+       if(document.getElementById("OnlineBanking").checked==true){
+              var payment= document.getElementById("OnlineBanking").value;
+             }
+         else if(document.getElementById("CreditCard").checked==true){
+              var payment= document.getElementById("CreditCard").value;
+        }
+
+     
+       /*document.write("THANK YOU FOR PURCHASING OUR ITEM !" + "<br><br>")
+       document.write("*******************************************" + "<br><br>")
+        document.write("BILLING ADDRESS" + "<br><br>")
+        document.write("*******************************************" + "<br><br>")
+          document.write("Full Name:   " + fullname + "<br><br>")
+       document.write("Phone Number:   " + phonenum + "<br><br>")
+       document.write("Email:   " + email + "<br><br>")
+       document.write("Address:   " + address+ ", " + postcode + ", " + city +", " + state + "<br><br>")
+       document.write("Delivery Method (Free Shipping):  " + delivery + "<br><br>")
+       document.write("*******************************************" + "<br><br>")
+       document.write("PAYMENT" + "<br><br>")
+       document.write("*******************************************" + "<br><br>")
+       document.write("Payment Mode:   " + payment + "<br><br>")
+          document.write("Name on Card:   " + cname + "<br><br>")
+       document.write("Credit Card Number: " + ccnum + "<br><br>")
+       document.write("Expired Month:   " + expmonth + "<br><br>")
+       document.write("Expired Year:   " + expyear + "<br><br>")
+       document.write("CVV:   " + cvv + "<br><br>")
+       document.write("*******************************************" + "<br><br>")
+*/
+    }
+    function change(){
+     if(document.getElementById("OnlineBanking").checked==true){
+       document.getElementById("cname").disabled=true;
+       document.getElementById("ccnum").disabled=true;
+       document.getElementById("expmonth").disabled=true;
+       document.getElementById("expyear").disabled=true;
+       document.getElementById("cvv").disabled=true;
+   }
+     else{
+          document.getElementById("cname").disabled=false;
+       document.getElementById("ccnum").disabled=false;
+       document.getElementById("expmonth").disabled=false;
+       document.getElementById("expyear").disabled=false;
+       document.getElementById("cvv").disabled=false;
+     }
+     
+}
+</script>
+</body>
+</html>

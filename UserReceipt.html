@@ -12,10 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/UserStyle.css">
-
-    <style>
-
-    </style>
+    <!--<link rel="stylesheet" href="css/UserCart.css"> -->
 
 </head>
 <body>
@@ -24,7 +21,7 @@
 
 <header class="header">
 
-    <a href="index.html" class="logo"><i class="fa-solid fa-pills"></i> PairPearl Pharmacy </a>
+    <a href="UserDashboard.html" class="logo"><i class="fa-solid fa-pills"></i> PairPearl Pharmacy </a>
 
     <nav class="navbar">
         <a href="UserDashboard.html">Home</a>
@@ -37,7 +34,7 @@
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        <a href="UserCart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div><span style="font-size: medium;">0</span></i></a>
+        <a href="UserCart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div><span style="font-size: medium ;">0</span></i></a>
         <div class="fas fa-user" id="login-btn"></div>
     </div>
 
@@ -45,6 +42,7 @@
         <input type="search" id="search-box" placeholder="search product name / category">
         <label for="search-box" class="fas fa-search"></label>
     </form>
+
 
     <form action="" class="login-form">
         <h3>login now</h3>
@@ -54,7 +52,9 @@
         <p>don't have an account <a href="#">create now</a></p>
         <input type="submit" value="login now" class="btn">
     </form>
+
 </header>
+
 <!-- header section ends -->
 
 <!-- home section starts  -->
@@ -71,66 +71,17 @@
 
 <!-- home section ends -->
 
-<!-- order history section starts  -->
-<section>
-    <div class="col-12 tm-block-col">
-        <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll">
-            <h3 class="heading"> Tracking Order</h3>
-            <table class="table" style="font-size: small;">
-                <thead>
-                    <tr>
-                        <th scope="col">ORDER NO.</th>
-                        <th scope="col">STATUS</th>
-                        <th scope="col">OPERATORS</th>
-                        <th scope="col">LOCATION</th>
-                        <th scope="col">COURIER</th>
-                        <th scope="col">START DATE</th>
-                        <th scope="col">EST DELIVERY DUE</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row"><b>#122349</b></th>
-                        <td>
-                            <div class="tm-status-circle moving">
-                            </div>Moving
-                        </td>
-                        <td><b>Amira Adani</b></td>
-                        <td><b>Gopeng, Perak</b></td>
-                        <td><b>JNT EXPRESS</b></td>
-                        <td>16:00, 12 JUNE 2022</td>
-                        <td>17:00, 17 JUNE 2022</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><b>#122348</b></th>
-                        <td>
-                            <div class="tm-status-circle pending">
-                            </div>Pending
-                        </td>
-                        <td><b>Amira Adani</b></td>
-                        <td><b>Gopeng, Perak</b></td>
-                        <td><b>JNT EXPRESS</b></td>
-                        <td>11:00, 10 JUNE 2022</td>
-                        <td>16:00, 14 JUNE 2022</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><b>#122347</b></th>
-                        <td>
-                            <div class="tm-status-circle cancelled">
-                            </div>Cancelled
-                        </td>
-                        <td><b>Amira Adani</b></td>
-                        <td><b>Gopeng, Perak</b></td>
-                        <td><b>JNT EXPRESS</b></td>
-                        <td>12:00, 02 MEI 2022</td>
-                        <td>06:00, 07 MEI 2022</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+<!-- cart section starts  -->
+
+<section class="cont" id="cart">
+    <h3 class="heading">Receipt</h3>
+    
+    
 </section>
-<!-- order history section ends -->
+
+<!-- cart section ends -->
+
+
 
 <!-- footer section starts  -->
 
@@ -175,11 +126,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 
 <!-- custom js file link  -->
 <script src="js/UserJS.js"></script>
-
+<script src="js/UserCart.js"></script>
 </body>
 </html>
